@@ -11,6 +11,54 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+
+    <style>
+        table {
+            border:solid 4px rgb(0, 102, 128);
+            border-collapse: collapse;
+            padding: 15px; 
+        }
+        thead tr {
+            background-color: #fafafa;
+            margin:10px;
+            border: solid 1px;
+            padding:8px;
+            text-align: center;  
+        }
+        tbody tr {
+            background-color: #fafafa;
+            margin:10px;
+            border: solid 1px;
+            padding:8px;
+            text-align: center;  
+        }
+        tr:hover {
+            cursor: pointer;
+            border: 0.1rem solid #565656;
+        }
+    </style>
+      </head>
+      <body>
+  
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="birds.html">Interesting Birds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="advanced.html">Advanced</a>
+                    </li>
+                  </ul>
+                 </div>
+          </div>
+        </nav>
 </head>
 <body>
 <h1> Birds by Shaik </h1>
@@ -32,12 +80,157 @@
         <div class="col-md">Kagu</div>
         <div class="col-md">Abbott's Booby</div>
     </div>
-    The div row containing bird names will break first as we keep on reducing the browser window size because of the number of charecters in the bird names.
+    
    
   
 </div>
 
+<p>The div row containing bird names will break first as we keep on reducing the browser window size because of the number of charecters in the bird names.</p>
+</div>
+<div class="container">
+  <img src="1.jpg" class="img-fluid" height="400" width="300" alt="Sacred Ibis">
+  <img src="2.jpg" class="img-fluid" height="300" width="300" alt="Hainan Leaf Warbler">
+  <img src="3.jpg" class="img-fluid" height="300" width="300" alt="Abyssinian Owl">
+</div>
 
+<div class="container">
+  <img src="1.jpg" class="img-thumbnail" height="400" width="300" alt="Sacred Ibis">
+  <img src="2.jpg" class="img-thumbnail" height="300" width="300" alt="Hainan Leaf Warbler">
+  <img src="3.jpg" class="img-thumbnail" height="300" width="300" alt="Abyssinian Owl">
+</div>
 
+<table class="table table-bordered border-primary caption-top table-striped">
+  <caption>Tables with Birds and Athletes and Lakes</caption>
+  <thead>
+    <tr class="table-dark">
+      <th scope="col">Letter</th>
+      <th scope="col">Bird</th>
+      <th scope="col">Lake</th>
+      <th scope="col">Athlete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info">
+      <td scope="row">S</td>
+      <td>Sacred Ibis</td>
+      <td>Sagami Reservoir</td>
+      <td>Sergio Agüero</td>
+    </tr>
+    <tr class="table-warning">
+      <td scope="row">H</td>
+      <td>Hainan Leaf Warbler</td>
+      <td>Hancza</td>
+      <td>Harry Kane</td>
+    </tr>
+    <tr class="table-danger">
+      <td scope="row">A</td>
+      <td>Abyssinian Owl</td>
+      <td>Abert Lake</td>
+      <td>Aasif Karim</td>
+    </tr>
+    <tr class="table-secondary">
+        <td scope="row">I</td>
+        <td>Icterine Warbler</td>
+        <td>Iliamna Lake</td>
+        <td>Irvin</td>
+    </tr>
+    <tr class="table-primary">
+      <td scope="row">K</td>
+      <td>Kagu</td>
+      <td>Kamloops Lake</td>
+      <td>Kaftan</td>
+    </tr>
+    <tr class="table-light">
+      <td scope="row">A</td>
+      <td>Abbott's Booby</td>
+      <td>Amisk Lake</td>
+      <td>Abby Bishop</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  <button class="btn">S</button>
+  <button class="btn">H</button>
+  <button class="btn">A</button>
+  <button class="btn">I</button>
+  <button class="btn">K</button>
+  <button class="btn">A</button>
+</div>
+
+<div class="btn-toolbar" role="group" aria-label="Success Categorization">
+  <button type="button" class="btn btn-success">S</button>
+  <button type="button" class="btn btn-success">H</button>
+  <button type="button" class="btn btn-success">A</button>
+</div>
+
+<div class="btn-toolbar" role="group" aria-label="Warning">
+  <button type="button" class="btn btn-warning">I</button>
+  <button type="button" class="btn btn-warning">K</button> 
+</div>
+
+<div class="btn-toolbar" role="group" aria-label="Danger">
+  <button type="button" class="btn btn-danger">A</button>
+</div>
+
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+    <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+  </ul>
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="form-label">Bird</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your bird">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+
+<div class="card" style="width: 18rem;">
+  <img src="1.jpg" class="card-img-top" alt="Sacred Ibis">
+  <div class="card-body">
+    <h5 class="card-title">Sacred Ibis</h5>
+    <p class="card-text">The African sacred ibis (Threskiornis aethiopicus) is a species of ibis, a wading bird of the family Threskiornithidae. It is native to Africa and the Middle East. It is especially known for its role in the religion of the Ancient Egyptians, where it was linked to the god Thoth; despite this, the species is currently extirpated from Egypt.</p>
+    <a href="https://en.wikipedia.org/wiki/African_sacred_ibis" class="btn btn-secondary">Wikipedia</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="2.jpg" class="card-img-top" alt="Hainan Leaf Warbler">
+  <div class="card-body">
+    <h5 class="card-title">Hainan Leaf Warbler</h5>
+    <p class="card-text">The Hainan leaf warbler (Phylloscopus hainanus) is a species of Old World warbler in the family Phylloscopidae.
+
+        Its natural habitats are subtropical or tropical moist lowland forest and subtropical or tropical moist montane forest.
+        
+        It is threatened by habitat loss.</p>
+    <a href="https://en.wikipedia.org/wiki/Hainan_leaf_warbler" class="btn btn-secondary">Wikipedia</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="3.jpg" class="card-img-top" alt="Abyssinian Owl">
+  <div class="card-body">
+    <h5 class="card-title">Abyssinian Owl</h5>
+    <p class="card-text">The Abyssinian owl has yellow eyes, a black bill and gray eyebrows. It is similar in appearance to the long-eared owl, Asio otus, but their ranges do not overlap, and the Abyssinian owl is darker. It has prominent dark brown, white-edged ear tufts that are slightly centrally located on the head.</p>
+    <a href="https://en.wikipedia.org/wiki/Abyssinian_owl" class="btn btn-secondary">Wikipedia</a>
+  </div>
+</div>
 </body>
 </html>
